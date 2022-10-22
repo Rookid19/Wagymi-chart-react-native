@@ -32,7 +32,7 @@ export default function App() {
         <LineChart>
           <LineChart.Path />
           <LineChart.CursorCrosshair />
-          <LineChart.CursorLine />
+          <LineChart.CursorLine style={{height : 100}}/>
         </LineChart>
       </LineChart.Provider>
     </View>
@@ -55,5 +55,9 @@ const styles = StyleSheet.create({
   price: {
     fontSize: 40,
     textAlign: "center",
+  },
+  date: {
+    textAlign: "center",
+    font: 20,
   },
 });
